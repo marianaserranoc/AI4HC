@@ -1,0 +1,6 @@
+Partition,Role,Encounters,Unique patients,Readmissions <30d,Prevalence %,Share of cohort %
+train,Fit the model,59607,41992,6749,11.32249568003758,60.00301993154822
+cal,Fit the probability calibrator,9886,6998,1135,11.480882055431923,9.951681095228508
+val,Model selection and threshold policy,14962,10498,1732,11.575992514369737,15.061405274813772
+test,"Opened once, after the policy is locked",14885,10499,1698,11.40745717164931,14.983893698409503
+overall,-,99340,69987,11314,11.38916851218039,100.0

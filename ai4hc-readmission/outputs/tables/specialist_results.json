@@ -1,0 +1,142 @@
+{
+ "group_share": {
+  "train": 0.41870921200530137,
+  "cal": 0.42170746510216467,
+  "val": 0.4228712738938645,
+  "test": 0.42082633523681556
+ },
+ "group_prevalence": {
+  "train": 0.06559019152175655,
+  "cal": 0.0652434636603502,
+  "val": 0.06638217164532954,
+  "test": 0.07072158365261813
+ },
+ "group_n": {
+  "train": 24958,
+  "cal": 4169,
+  "val": 6327,
+  "test": 6264
+ },
+ "group_readmits": {
+  "train": 1637,
+  "cal": 272,
+  "val": 420,
+  "test": 443
+ },
+ "validation_group_discrimination": [
+  {
+   "model": "Main model (locked)",
+   "roc_auc": 0.5934677984957315,
+   "pr_auc": 0.08968711922844586
+  },
+  {
+   "model": "Specialist - LR",
+   "roc_auc": 0.6094230412666168,
+   "pr_auc": 0.09377461775187415
+  },
+  {
+   "model": "Specialist - LR (stronger reg.)",
+   "roc_auc": 0.6107737389860295,
+   "pr_auc": 0.09387434388047117
+  },
+  {
+   "model": "Specialist - Gradient boosting",
+   "roc_auc": 0.5992974437108515,
+   "pr_auc": 0.09280092185280422
+  }
+ ],
+ "chosen_specialist": "LR (stronger reg.)",
+ "router_threshold": 0.13661341945976366,
+ "test": [
+  {
+   "policy": "Current: one model",
+   "segment": "All patients",
+   "n": 14885,
+   "readmits": 1698,
+   "alerts_per_1000": 249.91602284178705,
+   "caught": 711,
+   "missed": 987,
+   "recall": 0.41872791519434627,
+   "precision": 0.19112903225806452,
+   "false_alarms": 3009,
+   "roc_auc": 0.6530355278152994
+  },
+  {
+   "policy": "Current: one model",
+   "segment": "Blind-spot group",
+   "n": 6264,
+   "readmits": 443,
+   "alerts_per_1000": 3.352490421455939,
+   "caught": 1,
+   "missed": 442,
+   "recall": 0.002257336343115124,
+   "precision": 0.047619047619047616,
+   "false_alarms": 20,
+   "roc_auc": 0.5964746618745936
+  },
+  {
+   "policy": "Current: one model",
+   "segment": "Everyone else",
+   "n": 8621,
+   "readmits": 1255,
+   "alerts_per_1000": 429.0685535320728,
+   "caught": 710,
+   "missed": 545,
+   "recall": 0.5657370517928287,
+   "precision": 0.19194376858610435,
+   "false_alarms": 2989,
+   "roc_auc": 0.617941375956938
+  },
+  {
+   "policy": "Router: main + specialist",
+   "segment": "All patients",
+   "n": 14885,
+   "readmits": 1698,
+   "alerts_per_1000": 251.1924756466241,
+   "caught": 715,
+   "missed": 983,
+   "recall": 0.4210836277974087,
+   "precision": 0.1912276009628243,
+   "false_alarms": 3024,
+   "roc_auc": 0.6539643166794439
+  },
+  {
+   "policy": "Router: main + specialist",
+   "segment": "Blind-spot group",
+   "n": 6264,
+   "readmits": 443,
+   "alerts_per_1000": 1.1174968071519795,
+   "caught": 2,
+   "missed": 441,
+   "recall": 0.004514672686230248,
+   "precision": 0.2857142857142857,
+   "false_alarms": 5,
+   "roc_auc": 0.5987614703981032
+  },
+  {
+   "policy": "Router: main + specialist",
+   "segment": "Everyone else",
+   "n": 8621,
+   "readmits": 1255,
+   "alerts_per_1000": 432.8964157290338,
+   "caught": 713,
+   "missed": 542,
+   "recall": 0.5681274900398406,
+   "precision": 0.1910503751339764,
+   "false_alarms": 3019,
+   "roc_auc": 0.617941375956938
+  }
+ ],
+ "bootstrap": {
+  "overall_recall_change": [
+   0.002393889357072531,
+   -1.4140271493211816e-05,
+   0.0053098913276427
+  ],
+  "group_recall_change": [
+   0.0024217071260407507,
+   -0.004684115622697937,
+   0.011041231462139055
+  ]
+ }
+}

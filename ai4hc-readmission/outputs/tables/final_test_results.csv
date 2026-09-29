@@ -1,0 +1,16 @@
+index,Value
+Locked alert threshold,0.13709597175560034
+Test encounters,14885
+Readmissions in test set,1698
+Readmissions correctly flagged (TP),711
+Alerts on non-readmitted patients (FP),3009
+Missed readmissions (FN),987
+Recall,0.41872791519434627
+Recall 95% CI,0.395-0.442
+Precision,0.19112903225806452
+Precision 95% CI,0.179-0.204
+"Alerts per 1,000",249.91602284178705
+ROC-AUC,0.6530355278152994
+PR-AUC,0.20683692137601498
+Brier,0.0974366620860498
+ECE,0.009098972160170915

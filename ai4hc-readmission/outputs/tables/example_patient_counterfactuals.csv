@@ -1,0 +1,7 @@
+lever,risk_before,risk_after,flips_below_threshold
+A1C_tested: 0 -> 1 (test HbA1c before discharge),0.1372,0.1251,True
+med_change: 0 -> 1 (adjust medication at discharge),0.1372,0.136,True
+insulin: Steady -> Down (taper insulin),0.1372,0.1555,False
+discharge_group: Home -> Home with health service,0.1372,0.1595,False
+num_medications: 14 -> 10 (simplify regimen),0.1372,0.1351,True
+COMBO: A1C tested + med adjusted + regimen simplified to 8 meds,0.1372,0.1211,True

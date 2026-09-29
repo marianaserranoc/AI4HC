@@ -1,0 +1,4 @@
+Step,Encounters removed,Encounters remaining,Unique patients remaining
+All encounters in the UCI extract,0,101766,71518
+Exclude discharge to death or hospice,2423,99343,69990
+Exclude unknown/invalid gender,3,99340,69987

@@ -1,0 +1,8 @@
+Column,% missing,Handling decision,Reason
+weight,96.86,Dropped,96.9% missing - no usable signal
+medical_specialty,49.08,"Kept, imputed as 'Missing'",Missingness is itself informative (which service admitted the patient)
+payer_code,39.56,"Grouped into payer_group, 'Unknown' level",Not missing at random; used as a socioeconomic proxy and audited
+race,2.23,"Kept for fairness audit only, not a model input","2.2% missing; used to measure gaps, not to score patients"
+diag_3,1.4,Grouped by ICD-9 chapter; NaN -> 'Missing',Stateless rule-based grouping
+diag_2,0.35,Grouped by ICD-9 chapter; NaN -> 'Missing',Stateless rule-based grouping
+diag_1,0.02,Grouped by ICD-9 chapter; NaN -> 'Missing',Stateless rule-based grouping

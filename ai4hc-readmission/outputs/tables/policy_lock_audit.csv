@@ -1,0 +1,10 @@
+index,Value
+Policy selection data,validation only
+Selected model,Logistic regression
+Calibration method,sigmoid
+Calibration data,dedicated calibration slice
+Locked threshold,0.13709597175560034
+"Capacity limit (alerts/1,000)",250
+Recall floor requested,0.5
+Joint rule feasible,False
+Rule applied,PRE-SPECIFIED FALLBACK: maximise recall subject to the capacity limit

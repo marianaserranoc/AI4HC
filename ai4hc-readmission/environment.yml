@@ -1,0 +1,32 @@
+# Environment for diabetes_readmission_rai.ipynb
+# Mirrors the course repo (RAI_opioid_risk_prevention/environment.yml) and pins the RAI packages
+# to versions that work together: responsibleai 0.36 needs pandas<2, numpy<=1.26.2, scikit-learn<=1.5.1.
+name: ai4hc_readmit
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy=1.26.2
+  - pandas=1.5.3
+  - scipy=1.13.1
+  - scikit-learn=1.5.1
+  - matplotlib=3.9.2
+  - seaborn
+  - ipywidgets
+  - jupyterlab
+  - notebook
+  - ipykernel
+  - joblib
+  - packaging
+  - jupyter
+  - pytest
+  - pip:
+      - responsibleai==0.36.0
+      - raiwidgets==0.36.0
+      - dice-ml==0.11
+      - econml
+      - shap
+      - interpret-community
+      - erroranalysis
+      - raiutils

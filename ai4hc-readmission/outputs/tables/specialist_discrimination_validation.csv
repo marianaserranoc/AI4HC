@@ -1,0 +1,5 @@
+Model,Group ROC-AUC (val),Group PR-AUC (val)
+Main model (locked),0.5934677984957315,0.08968711922844586
+Specialist: Logistic regression,0.6094230412666168,0.09377461775187415
+Specialist: Logistic regression (C=0.3),0.6107737389860295,0.09387434388047117
+Specialist: Gradient boosting,0.5992974437108515,0.09280092185280422

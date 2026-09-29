@@ -1,0 +1,6 @@
+Feature,Share of counterfactuals that changed it
+num_medications,0.8170365487438658
+discharge_group,0.7701604043067458
+insulin,0.37632754705925436
+A1C_tested,0.11345491833296711
+med_change,0.11177030689225811
